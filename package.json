@@ -1,0 +1,36 @@
+{
+  "name": "lingadoo",
+  "private": true,
+  "version": "0.1.0",
+  "license": "AGPL-3.0-or-later",
+  "type": "module",
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "inspect:browser": "node ./scripts/inspect_editor_state.mjs",
+    "e2e": "playwright test -c ./playwright.config.ts",
+    "e2e:smoke": "playwright test -c ./playwright.config.ts --grep @smoke",
+    "e2e:headed": "playwright test -c ./playwright.config.ts --headed",
+    "e2e:server": "bash ./tests/e2e/scripts/start_e2e_server.sh",
+    "e2e:report": "playwright show-report .test-artifacts/e2e/report"
+  },
+  "dependencies": {
+    "mupdf": "^1.27.0",
+    "pdfjs-dist": "^4.9.155",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tesseract.js": "^7.0.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^6.0.1",
+    "typescript": "^5.6.3",
+    "vite": "^8.0.10"
+  }
+}

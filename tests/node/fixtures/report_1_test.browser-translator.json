@@ -1,0 +1,919 @@
+{
+  "sourcePdfName": "report_1_test.pdf",
+  "sourceCode": "he",
+  "targetCode": "en",
+  "translationEngine": "browser-translator",
+  "translations": [
+    {
+      "schema_version": "1.0",
+      "stage": "translations",
+      "document_id": "browser-detected-text-ee3311a6-0205-478f-9057-dd7f89535dee",
+      "page_id": 1,
+      "model_version": "browser-translator-v1",
+      "glossary_version": "browser-ui",
+      "prompt_version": "browser-translator-v1",
+      "blocks": [
+        {
+          "block_id": "p1_b1",
+          "page_id": 1,
+          "source_text": "לפרטים ומידע נוסף 5054",
+          "translated_text": "For details and additional information 5054",
+          "translation_hash": "394e4e25a90d3f107ab2bbc83e672689d0c0b0cd346f1a023563063e4cc52b85",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b2",
+          "page_id": 1,
+          "source_text": "*",
+          "translated_text": "*",
+          "translation_hash": "f7aab05b46e3b350948b70d0674c0dc6e5401d1ed7e4fb51ae982e07209463b0",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b3",
+          "page_id": 1,
+          "source_text": "הברזל",
+          "translated_text": "the iron",
+          "translation_hash": "b624807908e414bb777dd0f7da212d3e88a87c717671744982772f8bfef3de04",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b4",
+          "page_id": 1,
+          "source_text": "19 א', רמת החייל, תל-אביב 6971026",
+          "translated_text": "19 A., Ramat Hachayal, Tel Aviv 6971026",
+          "translation_hash": "bbceab0e7ef19b5ffe40af0511ab708d9babaf53d1bcaa4806471f937b6af0d8",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b5",
+          "page_id": 1,
+          "source_text": "פקס: 073-2462700",
+          "translated_text": "פקס: 073-2462700",
+          "translation_hash": "1845d27565ae328aa7c8f19d82a66cf5d6bcac7baffd90bcdc047bbbc8df338c",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b6",
+          "page_id": 1,
+          "source_text": "www.as-invest.co.il",
+          "translated_text": "www.as-invest.co.il",
+          "translation_hash": "372f100f5886dbc928c62d265bb86f3ad27b8d42b67a5195fdf66c29dde0a052",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b7",
+          "page_id": 1,
+          "source_text": "sherut@altshul.co.il",
+          "translated_text": "sherut@altshul.co.il",
+          "translation_hash": "32f168eb86089d91cce6272ac1058641bf836da99ac1696c63e0cd8cb2816f59",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b8",
+          "page_id": 1,
+          "source_text": "תאריך הדוח: 30/09/2025",
+          "translated_text": "Report date: 30/09/2025",
+          "translation_hash": "430ff9cb1c60be9b729404599dd38c261ff2275aa588319ab2c9059e31f0c455",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b9",
+          "page_id": 1,
+          "source_text": "דוח רבעוני לעמית בקרן השתלמות \"אלטשולר שחם השתלמות\" לסוף הרבעון ה- 3 לשנת 2025",
+          "translated_text": "Quarterly report for a member of the Altshuler Shaham Continuing Education Fund for the end of the 3rd quarter of 2025",
+          "translation_hash": "27517d7b46dc903838a8192bb4504e04ebf68efa300c6d7bf879f50a1217f8c9",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b10",
+          "page_id": 1,
+          "source_text": "תקופת הדוח: 30.09.2025-01.01.2025",
+          "translated_text": "Report period: 30.09.2025-01.01.2025",
+          "translation_hash": "ff69c6d23651e1eb57dcb5223852fa77af9daab279da2937e5eb6b302ae1d1a8",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b11",
+          "page_id": 1,
+          "source_text": "שם העמית: דוד שמש",
+          "translated_text": "Fellow's name: Solar water heater",
+          "translation_hash": "cd1b127dc28f0c9f70b9b6dee620e793cc5ce45410ec2fb19fbdb42bdf4310b3",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b12",
+          "page_id": 1,
+          "source_text": "מספר ת.ז.:",
+          "translated_text": "ID number:",
+          "translation_hash": "07acd7072bbfe1f979eed7b35ca9a8be7c2c0558e8bcea56f32911c1d0a2fb80",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b13",
+          "page_id": 1,
+          "source_text": "0123457/8",
+          "translated_text": "0123457/8",
+          "translation_hash": "f178b151ee026eed315cf9363dc1032b751a4d2c370a158cb6dead08b6bebd83",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b14",
+          "page_id": 1,
+          "source_text": "מספר חשבון:",
+          "translated_text": "account number:",
+          "translation_hash": "3b8dc619afd06f0c3199adfad8f2ba8b1eb5beade7e3fa31f71364dd152cbec6",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b15",
+          "page_id": 1,
+          "source_text": "5555555",
+          "translated_text": "5555555",
+          "translation_hash": "28e01473af00cd8506dda9701720f7a0f81c21753871f038d22e68d8b815ca66",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b16",
+          "page_id": 1,
+          "source_text": "שם המעסיק: שכיר כללי",
+          "translated_text": "Employer Name: General Employee",
+          "translation_hash": "eb853b0dc5055d22042b8567adf9c19196fe22c943fd2a1d7ce81cd613ccbfc0",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b17",
+          "page_id": 1,
+          "source_text": "א. תשלומים צפויים מקופת הגמל",
+          "translated_text": "a. Expected payments from the provident fund",
+          "translation_hash": "7f6b305eef5f9f0829f53b289a7d2c677e070a0a56f02e7fc38c2f69adbd1890",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b18",
+          "page_id": 1,
+          "source_text": "בדוק אם",
+          "translated_text": "Check if",
+          "translation_hash": "5f7017e752aae1bc2e5baa8130e37df006286a34f8d88c4780b4e8c8e19e6c72",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b19",
+          "page_id": 1,
+          "source_text": "סכום בש\"ח",
+          "translated_text": "sum in NIS",
+          "translation_hash": "835d7cdeef9766c05080f7d09fb2ebf1a1ae1ff9b23542d282cb2a09a29410a0",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b20",
+          "page_id": 1,
+          "source_text": "סכומי הביטוח",
+          "translated_text": "the insurance amounts",
+          "translation_hash": "7c24ee0f95b90b4f168acd5d73e0ba04b1272abff548a41cff33e1b39eea9d96",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b21",
+          "page_id": 1,
+          "source_text": "יתרת הכספים המיועדים למשיכה חד פעמית החל מ-",
+          "translated_text": "the balance of funds intended for a one-time withdrawal starting from the",
+          "translation_hash": "1b3b098eae1a2405eaab6ea624ec380897efc5ebd668f6bf96bbc4e104bd0d19",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b22",
+          "page_id": 1,
+          "source_text": "28/02/2013",
+          "translated_text": "28/02/2013",
+          "translation_hash": "9b436b2f1bfdc81100a62db430bdd2d59a0dc87c08211257ee37c130862f9fa4",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b23",
+          "page_id": 1,
+          "source_text": "111,111",
+          "translated_text": "111,111",
+          "translation_hash": "fa60df197ad738eacd67c2b4f665bbc9809549edd5b813795786e39d31a53e6b",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b24",
+          "page_id": 1,
+          "source_text": "שלך מתאימים",
+          "translated_text": "Yours are appropriate",
+          "translation_hash": "626d3adc516b63c5313757049b74b5a7870c1468033535b54c43040367eb28bd",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b25",
+          "page_id": 1,
+          "source_text": "סכום חד פעמי במקרה מוות*",
+          "translated_text": "a lump sum in case of death*",
+          "translation_hash": "239b4aecaa49d7a98d0545352378fa0684ce42106badcaa508bfe4ed91d80933",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b26",
+          "page_id": 1,
+          "source_text": "111,111",
+          "translated_text": "111,111",
+          "translation_hash": "fa60df197ad738eacd67c2b4f665bbc9809549edd5b813795786e39d31a53e6b",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b27",
+          "page_id": 1,
+          "source_text": "לצרכיך",
+          "translated_text": "for your needs",
+          "translation_hash": "e01310945c1658722966b8c3d2e9df6c978af8908a5807b25a81eb92abe505a6",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b28",
+          "page_id": 1,
+          "source_text": "*כולל את סך יתרת הכספים בחשבון נכון ל- 30/09/2025",
+          "translated_text": "* Includes the total balance of funds in the account as of 30/09/2025",
+          "translation_hash": "93ac79f0e2d952c6d0df753c7a23de32d8159201e03a6a3f455106dbc1ed8bd3",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b29",
+          "page_id": 1,
+          "source_text": ".",
+          "translated_text": ".",
+          "translation_hash": "ea7c60571a23f207e7770c108e3d8fcc1fe22ae56be7c253997163c72740fba7",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b30",
+          "page_id": 1,
+          "source_text": "לידיעתך, הזכאים לקבלת הכספים במקרה מוות נקבעו לאחרונה ביום: 16/09/2015",
+          "translated_text": "Please note that those entitled to receive the funds in the event of death were recently determined on: 16/09/2015",
+          "translation_hash": "2dad595135a068d3351676067ff6ac376b0e62a232aff6e06814fda76ecf7e3e",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b31",
+          "page_id": 1,
+          "source_text": "ב. תנועות בחשבונך בתקופת הדוח",
+          "translated_text": "B. transactions in your account during the reporting period",
+          "translation_hash": "837824d66d4e6cd162cf11e704196a0203d4d9afcb5256b3249de0984dc4ca98",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b32",
+          "page_id": 1,
+          "source_text": "ג. אחוז דמי ניהול והוצאות בתקופת הדוח",
+          "translated_text": "c. Percentage of management fees and expenses during the reporting period",
+          "translation_hash": "aadc18136a36d70c63b87fcf1fd4e6ff8a08bbb2b2733c991445a03be55a6ff3",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b33",
+          "page_id": 1,
+          "source_text": "לידיעתך",
+          "translated_text": "for your information",
+          "translation_hash": "f186641a3312e2a21aad9ebec162761d4dc2e5f8635f8134161937b36a59e3b5",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b34",
+          "page_id": 1,
+          "source_text": "סכום בש\"ח",
+          "translated_text": "sum in NIS",
+          "translation_hash": "835d7cdeef9766c05080f7d09fb2ebf1a1ae1ff9b23542d282cb2a09a29410a0",
+          "status": "cached",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b35",
+          "page_id": 1,
+          "source_text": "דמי ניהול מחיסכון",
+          "translated_text": "Management fees from savings",
+          "translation_hash": "a81a08720d80824d22e3169e5952c93d561264ffc084f3a03d9018ca95df26f7",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b36",
+          "page_id": 1,
+          "source_text": "0.65%",
+          "translated_text": "0.65%",
+          "translation_hash": "46433c3ab9d964a02610dbfd9c4cf2b5e974b74613ec128ceed5aecec21ccce2",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b37",
+          "page_id": 1,
+          "source_text": "ממוצע דמי",
+          "translated_text": "Average fee",
+          "translation_hash": "8f63264bde2ef1f32a7dcde68e15b365efac9bc69fa9e0407a7c75266fadbc2b",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b38",
+          "page_id": 1,
+          "source_text": "דמי הניהול מוצגים על בסיס שנתי.",
+          "translated_text": "The management fee is presented on an annual basis.",
+          "translation_hash": "fac84219e22437540d340953861e662ddf47d20f0ade3aafe4e94ea92fa7c362",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b39",
+          "page_id": 1,
+          "source_text": "יתרת הכספים בחשבון בתחילת השנה",
+          "translated_text": "the balance of funds in the account at the beginning of the year",
+          "translation_hash": "1f211d6227444a46417e908ea701c5a6db0f6811fcda0a0ededb28408d55ab28",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b40",
+          "page_id": 1,
+          "source_text": "222,222",
+          "translated_text": "222,222",
+          "translation_hash": "07c223361acca571784e8003934515e37917c836f4f2ae77bc95f6df6389f3ed",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b41",
+          "page_id": 1,
+          "source_text": "ניהול בקרן:",
+          "translated_text": "Fund management:",
+          "translation_hash": "db213df260c719105957e28d8447711ed7364ed21a1eafbf961b2b20048bf960",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b42",
+          "page_id": 1,
+          "source_text": "כספים שהופקדו לחשבון",
+          "translated_text": "funds deposited into an account",
+          "translation_hash": "f815991ac48e121c8f17d80c82b5649d0e223c874c8f537c3470c3c3742b8558",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b43",
+          "page_id": 1,
+          "source_text": "0",
+          "translated_text": "0",
+          "translation_hash": "9936e19a4fe74c72be90d7b8dd9a6ebfb377096c8d51386835f3ce87e853f81a",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b44",
+          "page_id": 1,
+          "source_text": "מחיסכון 0.69%",
+          "translated_text": "From saving 0.69%",
+          "translation_hash": "841687c7b23515127db1d142394ee43ca949a5e76a3a81a7724c79a68f793781",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b45",
+          "page_id": 1,
+          "source_text": "רווחים בניכוי הוצאות ניהול השקעות",
+          "translated_text": "Profits less investment management expenses",
+          "translation_hash": "5840a68984d10091c8f260ece24b228a0921c719b0a877eee0d74dc9d6e51377",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b46",
+          "page_id": 1,
+          "source_text": "33,333",
+          "translated_text": "33,333",
+          "translation_hash": "ccc77542f7b74e6b75956d68fe57f80d3a269bd50091afc89b68a3b8373027ac",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b47",
+          "page_id": 1,
+          "source_text": "ד. מסלולי השקעה ותשואות בתקופת הדוח*",
+          "translated_text": "d. Investment tracks and returns during the reporting period *",
+          "translation_hash": "fd9283beaa0c562d333d3bd8bb6c2ddfcca9522ae14faba3f9e0786773f76cb4",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b48",
+          "page_id": 1,
+          "source_text": "שים לב לגובה",
+          "translated_text": "Pay attention to height",
+          "translation_hash": "f838989c190dd2de64ef7b9efa6870076746ef95662e48943c1dfe6874236524",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b49",
+          "page_id": 1,
+          "source_text": "דמי ניהול שנגבו בשנה זו",
+          "translated_text": "Management fees charged this year",
+          "translation_hash": "4e409c360291c9a03295dc14be2e20240cd045e0f8ebba8e0347f57ad3f4e12b",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b50",
+          "page_id": 1,
+          "source_text": "-444",
+          "translated_text": "-444",
+          "translation_hash": "2cb11d6124efa0ef5fca5347c239a9b534de26fae9afba650f1d138fe48c89bf",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b51",
+          "page_id": 1,
+          "source_text": "מסלול כללי",
+          "translated_text": "General Track",
+          "translation_hash": "3fdcdba4ede8666e66197f9c3bac375cc17e93cd2447959ad5851352fcd81582",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b52",
+          "page_id": 1,
+          "source_text": "10.81%",
+          "translated_text": "10.81%",
+          "translation_hash": "4d841d5f54a2c0d6d33dd99aeed21ebe2f60aa8f724edb018704c8e5b2b126b3",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b53",
+          "page_id": 1,
+          "source_text": "דמי הניהול",
+          "translated_text": "the management fee",
+          "translation_hash": "b685ae4650358f7d2041f45eb93da1e7a2d99b992a0abc4bef70de140084f3ef",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b54",
+          "page_id": 1,
+          "source_text": "יתרת הכספים בחשבון נכון ל-",
+          "translated_text": "the balance of funds in the account is correct for the",
+          "translation_hash": "8f3575fd8f4dbc4b215ab39774741ecb42b9e6149636d97758538866db77ac54",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b55",
+          "page_id": 1,
+          "source_text": "30/09/2025",
+          "translated_text": "30/09/2025",
+          "translation_hash": "33e4ebd664ed34bf105cae568c655dd12e56af70a7fbc5a2c29edccd3b17db1d",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b56",
+          "page_id": 1,
+          "source_text": "111,111",
+          "translated_text": "111,111",
+          "translation_hash": "fa60df197ad738eacd67c2b4f665bbc9809549edd5b813795786e39d31a53e6b",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b57",
+          "page_id": 1,
+          "source_text": "*תשואות שהושגו במהלך התקופה שמתחילת השנה",
+          "translated_text": "* Returns obtained during the period from the beginning of the year",
+          "translation_hash": "357c7a376cbc572c8f481e8bcfdfca8a513d943f8fdfe9e312307ae847858e3a",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b58",
+          "page_id": 1,
+          "source_text": "הנגבים ממך",
+          "translated_text": "the people who are charged from you",
+          "translation_hash": "dbc007f3c5d6de63406d6716f67927ebc9b2d0cc3229154f165fd4ef3d561ebc",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b59",
+          "page_id": 1,
+          "source_text": "ועד לסוף הרבעון המדווח בניכוי הוצאות ניהול",
+          "translated_text": "And by the end of the reported quarter less management expenses",
+          "translation_hash": "7f4bc002c1f279ae2254de7487a5666c94485ffd695b90e0eceffd165a50dba4",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b60",
+          "page_id": 1,
+          "source_text": "השקעות וללא ניכוי דמי ניהול.",
+          "translated_text": "Investments and without deduction of management fees.",
+          "translation_hash": "af1e2693feb25f1bc81d1a77bfe2d742753e55d655eb704d532275cf1b7104c4",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b61",
+          "page_id": 1,
+          "source_text": "מומלץ, לבדוק",
+          "translated_text": "Recommended, check",
+          "translation_hash": "e113f9aa9a46821c8dc19131d51cebf0961961ee68965e53f0fc3a193ff242a5",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b62",
+          "page_id": 1,
+          "source_text": "ה. פירוט הפקדות לחשבון בתקופת הדוח",
+          "translated_text": "e. Details of account deposits during the reporting period",
+          "translation_hash": "9c0f34965fb40e7f2684c23597e294152b82e788ab9293730765f967a28abf63",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b63",
+          "page_id": 1,
+          "source_text": "שההפקדות בדוח",
+          "translated_text": "that the deposits in the report",
+          "translation_hash": "a6283b903552027998bf30dae21843cd779953497ae034d395995463a4d99ee8",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b64",
+          "page_id": 1,
+          "source_text": "עבור חודש",
+          "translated_text": "עבור חודש",
+          "translation_hash": "3f90d949f1c3ce2d2e643d12ef3ae991c7c4481b3747406029165368a5e4006f",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b65",
+          "page_id": 1,
+          "source_text": "מועד הפקדה",
+          "translated_text": "Deposit date",
+          "translation_hash": "e8512d80410f9e087b0b0d848c56c019d8fe8dac9bb6191468f1a0237799e576",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b66",
+          "page_id": 1,
+          "source_text": "משכורת",
+          "translated_text": "salary",
+          "translation_hash": "55ca673c228d3de45bd20b29303e96d6261d373b6310c48466e5ebe59df1d481",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b67",
+          "page_id": 1,
+          "source_text": "תגמולי עובד",
+          "translated_text": "Working Rewards",
+          "translation_hash": "d4e6419d4fff27e01c3a46e068085bf7c187bd70028e9316260e04cc1a90ac7b",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b68",
+          "page_id": 1,
+          "source_text": "תגמולי מעסיק",
+          "translated_text": "Employer Rewards",
+          "translation_hash": "10dd7ff6183fa9f48c84c302c3526dc148625293d52d992ffb1841d338a24275",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b69",
+          "page_id": 1,
+          "source_text": "סה\"כ הפקדות",
+          "translated_text": "Total deposits",
+          "translation_hash": "b61c2145db39661d4c9c15522cd9af7fcdf5f75dbc3ec3c4e38f72f54e075652",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b70",
+          "page_id": 1,
+          "source_text": "תואמות את",
+          "translated_text": "match the",
+          "translation_hash": "58c6828ee520d90988e6b9d0da825b3460179713707531d83a440d3818891011",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b71",
+          "page_id": 1,
+          "source_text": "משכורת",
+          "translated_text": "משכורת",
+          "translation_hash": "55ca673c228d3de45bd20b29303e96d6261d373b6310c48466e5ebe59df1d481",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b72",
+          "page_id": 1,
+          "source_text": "ההפקדות שנעשו",
+          "translated_text": "the deposits made",
+          "translation_hash": "9d0bf3d47c6af6223ced5342572b732f5979726983ca51df1d1663309feb1739",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b73",
+          "page_id": 1,
+          "source_text": "בתקופת הדוח לא היו הפקדות שוטפות",
+          "translated_text": "At the time of the report there were no current deposits",
+          "translation_hash": "fce3b338530fa0f2349806c6eb9f9ad2d32176cc8d6a6ae1555585791c3eaddf",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b74",
+          "page_id": 1,
+          "source_text": "בפועל. היעזר",
+          "translated_text": "In practice. Get help",
+          "translation_hash": "de62da772059ef19ee9564723eab0b25433fa6f5f068aa1bd74ad23af7d5f564",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b75",
+          "page_id": 1,
+          "source_text": "בתלוש המשכורת",
+          "translated_text": "on the pay slip",
+          "translation_hash": "528e7066bb768f3567e23168b092ada3fca67259c7dcbce5f56013da59028248",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b76",
+          "page_id": 1,
+          "source_text": "שלך להשוואה.",
+          "translated_text": "yours for comparison.",
+          "translation_hash": "97a942a95c6c4747f323da4f1f4d152a2159919a05c4534a116a96227bc00c75",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b77",
+          "page_id": 1,
+          "source_text": "1העלות השנתית הצפויה לשנת",
+          "translated_text": "1 The expected annual cost per year",
+          "translation_hash": "d33b1b4a698a563d0d35adfeb4cc1f4d0a6366c0e30eb582c6052f3a4dac7e68",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b78",
+          "page_id": 1,
+          "source_text": "2025 , בשל דמי ניהול והוצאות ישירות, בה יישא העמית ככל שימשיך להשקיע את כספיו במסלול/ים הבאים: במסלול כללי תהא: . 0.98%",
+          "translated_text": "2025, due to management fees and direct expenses, in which the member will bear as long as he continues to invest his money in the following track / s: in a general track will be:. 0.98%",
+          "translation_hash": "ec94aae371f1044add008903d22f55d2be897f161d67e97b2d9f79cc653c0af0",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b79",
+          "page_id": 1,
+          "source_text": "יובהר, כי הצגת שיעור העלות השנתית הצפויה מהווה תחזית בלבד, ומבוססת על מגוון רחב של הנחות אשר חלקן מבוסס על נתוני שנים קודמות ועל נוסחת המרה אחידה,",
+          "translated_text": "It will be clarified that the presentation of the expected annual cost rate is only a forecast, and is based on a wide range of assumptions, some of which are based on data from previous years and a uniform conversion formula,",
+          "translation_hash": "d819eb8ab90ba11fc5f98d88fa529c7d2c353f7a1e495c1fb89d81e79a4e49c9",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b80",
+          "page_id": 1,
+          "source_text": "ואשר כולן נערכו בהתבסס על המידע שהיה זמין לחברה בתחילת שנת הדיווח שבגינה מוצגת העלות השנתית הצפויה ובהתאם לנתונים האמורים. שיעור ההוצאות הישירות",
+          "translated_text": "And all of which were prepared based on the information available to the company at the beginning of the reporting year for which the expected annual cost is presented and in accordance with the said data. the rate of direct expenses",
+          "translation_hash": "88eb5ad2cc65448a24f39297b2a0481229a0ab13c0c7e83c48b1e99ba2613222",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b81",
+          "page_id": 1,
+          "source_text": "הצפוי בשל ביצוע השקעות מוצג לכל מסלול השקעה ובהתאם לצבירה בכל מסלול השקעה יחסית לצבירה הכוללת בכל המסלולים. אי לכך, אין בהצגה זו בכדי לחייב את החברה",
+          "translated_text": "Expected due to investments is presented to each investment track and in accordance with the accumulation in each investment track relative to the overall accumulation in all the tracks. Therefore, this presentation does not obligate the company",
+          "translation_hash": "7714235b594385028852b70079c7eb937f0c7a91f70f041a428ed1e2c3d873bb",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b82",
+          "page_id": 1,
+          "source_text": "לגביית עלויות בהתאם לשיעור העלות השנתית הצפויה, וכי השיעור בפועל ייקבע, בין היתר, בהתאם להשקעות שיבוצעו במהלך השנה, לתשואות שיושגו במהלך השנה על",
+          "translated_text": "For the collection of costs in accordance with the expected annual cost rate, and that the actual rate will be determined, among other things, in accordance with investments to be made during the year, to returns obtained during the year on",
+          "translation_hash": "fb49dc834ef8193f9c7108cb06965a9c69b305b245586ec33303e33178048a5a",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b83",
+          "page_id": 1,
+          "source_text": "נכסי העמיתים במסלול ההשקעה ובהתאם לסך המשיכות וההפקדות שיבוצעו בחשבון במהלך השנה. כמו כן, החברה אינה מחויבת בעדכון או שינוי שיעור העלות השנתית",
+          "translated_text": "The members' assets in the investment route and in accordance with the total withdrawals and deposits that will be made in the account during the year. Also, the company is not obligated to update or change the annual cost rate",
+          "translation_hash": "f810d26e8bc720bf98ca6300514a75923cfc16e1d03b47847e8044f98b0984f8",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b84",
+          "page_id": 1,
+          "source_text": "הצפויה על מנת לשקף אירועים או נסיבות שיחולו לאחר הצגתו.",
+          "translated_text": "expected to reflect events or circumstances that will apply after its presentation.",
+          "translation_hash": "a104088e82bd1e14e2668468da0c8eb152c9b426f2b8faa67ff7e7ad1b827fac",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b85",
+          "page_id": 1,
+          "source_text": "D0",
+          "translated_text": "D0",
+          "translation_hash": "441bf3eb5477e00789f98ee44a1df34465a532f718076cc55c01da69999f2b08",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b86",
+          "page_id": 1,
+          "source_text": "1/10",
+          "translated_text": "1/10",
+          "translation_hash": "fe7f62fa4857816e72cdb8cc150e7a9837e99eb7b1804c501b74a91ec841b383",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b87",
+          "page_id": 1,
+          "source_text": "051-1429295  (246774)",
+          "translated_text": "051-1429295  (246774)",
+          "translation_hash": "a4b3a81d379373ee909db606433e9ab7b6d1859ddc08e61ce3e94d894a3a86ef",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b88",
+          "page_id": 1,
+          "source_text": "220260",
+          "translated_text": "220260",
+          "translation_hash": "e0b2eaf79cfc47f80eb213f915aa6fb9ebc951b6eba621d792494d7850430452",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b89",
+          "page_id": 1,
+          "source_text": "שים לב, הנתונים הכספיים המוצגים בדוח מעוגלים לשקל הקרוב.",
+          "translated_text": "Please note that the financial data presented in the report are rounded to the next shekel.",
+          "translation_hash": "e8fa3746a5c5d2be5cca67ae559e5e436a03271b4801ad4323a9b3898add8b49",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        },
+        {
+          "block_id": "p1_b90",
+          "page_id": 1,
+          "source_text": "פיזי: 2  לוגי: 51",
+          "translated_text": "Physical: 2 Logical: 51",
+          "translation_hash": "b6dc9cf7d3bdc1de616aac8e6ee592b853b8d5a5bb1d2b47d7c1dcf2429a6f95",
+          "status": "translated",
+          "attempts": 1,
+          "issues": []
+        }
+      ]
+    }
+  ]
+}

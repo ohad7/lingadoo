@@ -1,0 +1,39 @@
+{
+  "featureNames": [
+    "ends_terminal_punct",
+    "starts_bullet",
+    "dangling_preposition",
+    "single_letter_prefix",
+    "unmatched_open",
+    "short_b",
+    "short_a",
+    "both_short",
+    "font_size_ratio",
+    "vertical_gap_norm",
+    "horizontal_gap_norm",
+    "same_row",
+    "bbox_width_ratio",
+    "both_hebrew",
+    "a_word_count",
+    "b_word_count"
+  ],
+  "w": [
+    -2.8088771223242053,
+    -5.02672142666368,
+    1.8528412896173239,
+    3.140417604938095,
+    3.0481218626873874,
+    1.8792334286884114,
+    1.674667339940481,
+    -0.4027045563251178,
+    -1.7099649303624898,
+    -0.870967673103589,
+    -22.586883817075204,
+    3.9553573097590853,
+    -0.07354228441677013,
+    1.770639708842549,
+    0.2204914655511139,
+    0.14231690095083205
+  ],
+  "bias": -5.156387075260989
+}

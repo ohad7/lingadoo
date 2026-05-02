@@ -1,0 +1,25 @@
+export function parseBooleanSearchParam(search: string, key: string, defaultValue?: boolean): boolean;
+export function parseNumberSearchParam(search: string, key: string, defaultValue?: number | null): number | null;
+export function parseStringSearchParam(search: string, key: string, defaultValue?: string): string;
+export function resolveAutoNudgeEnabledFromSearch(search: string): boolean;
+export function resolveUseBucketFontRatioEnabledFromSearch(search: string): boolean;
+export function resolvePreserveVerticalSourceAnchorEnabledFromSearch(search: string): boolean;
+export function resolveUseTightTextBBoxEnabledFromSearch(search: string): boolean;
+export function resolveRepairVerticalOverflowEnabledFromSearch(search: string): boolean;
+export function resolveEnableTesseractOcrFromSearch(search: string): boolean;
+export function resolveDetectLogosEnabledFromSearch(search: string): boolean;
+export function resolveProtectVisualRegionsEnabledFromSearch(search: string): boolean;
+export function resolveDefaultReconstructMixedBidiLinesEnabled(options?: {
+  appMode?: 'translate' | 'edit' | string;
+  sourceLanguageCode?: string;
+}): boolean;
+export function resolveReconstructMixedBidiLinesEnabledFromSearch(search: string, defaultValue?: boolean): boolean;
+export function resolveDebugInspectionsEnabledFromSearch(search: string): boolean;
+export function resolveDocumentAlternativesEnabledFromSearch(search: string): boolean;
+export function resolveBrowserTranslatorTimeoutMsFromSearch(search: string): number | null;
+export function resolveProgressToneFromSearch(search: string): 'calm' | 'playful' | 'silly';
+export function resolveSkipSingleCharBlocksFromSearch(search: string): boolean;
+export function resolveUseBarrierDetectionFromSearch(search: string): boolean;
+export function resolveStrictAutoNudgeBBoxCollisionFromSearch(search: string): boolean;
+export function resolveMergeContinuationBlocksEnabledFromSearch(search: string): boolean;
+export function resolveDocumentCandidateOverrideFromSearch(search: string): 'main-detected-text' | 'ocr-grouped' | 'ocr-grouped-mirrored' | null;
