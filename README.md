@@ -1,24 +1,57 @@
 # Lingadoo
 
-Lingadoo is a browser-first PDF translation and editing app. It runs the active document flow locally in the browser:
+**Free, open-source PDF translation and editing, running entirely in your browser.**
 
-1. PDF upload
-2. browser-side detected-text extraction
-3. browser translation through the Browser Translator API
-4. mirrored detected-text fitting
-5. local editor session and PDF export
+Lingadoo is a privacy-first PDF translator and editor for people who need to translate real documents without handing them to a server. Open a PDF, translate it locally, adjust the layout, edit the text, and export a new PDF from the browser.
 
-The checked-in app has no document-processing backend. Local development, browser inspection, tests, and GitHub Pages deployment use static file hosting only.
+Try the public app at `https://lingadoo.app`, or run and self-host your own copy.
 
-## Requirements
+## Why Lingadoo
+
+Most PDF translation tools ask you to upload a document to someone else's backend. That is a hard sell when the document is a contract, invoice, report, ID form, medical record, legal filing, or anything else that should stay private.
+
+Lingadoo takes a different path:
+
+- **Free to use**: no paywall in the app.
+- **Fully open source**: inspect, fork, self-host, and improve the code under `AGPL-3.0-or-later`.
+- **Browser-first privacy**: PDFs are processed locally in the browser; the static app does not receive your document.
+- **Translator and editor in one**: translate the PDF, then fix text, font size, position, wrapping, and layout before export.
+- **RTL-aware**: built for right-to-left translation workflows, including Hebrew and Arabic documents.
+- **Static-host friendly**: deployable as plain static files on GitHub Pages or any static host.
+
+## What It Does
+
+Lingadoo runs the active document flow locally:
+
+1. You choose a PDF in the browser.
+2. Lingadoo extracts detected text with MuPDF.js/WebAssembly.
+3. The browser's local `Translator` API translates supported text.
+4. Lingadoo mirrors and fits translated text when direction changes between RTL and LTR.
+5. You edit the local session and export a translated PDF.
+
+The current language choices are English, Hebrew, Arabic, French, German, and Italian. Translation availability depends on the browser's local Translator API and installed/downloadable language packs.
+
+## Privacy Model
+
+Uploaded PDFs are processed in the browser. The static Lingadoo app does not send document bytes, filenames, extracted text, translations, block ids, or edits to a Lingadoo server.
+
+Google Analytics support exists for public deployments, but it is disabled by default and must not include document content or document identifiers. The app also avoids external font CDNs; bundled export fonts are served with the static app.
+
+## Browser Support
+
+Desktop Google Chrome or Microsoft Edge is currently required for the public upload flow. Lingadoo relies on the browser's local `Translator` API plus WebAssembly, module workers, and local canvas APIs.
+
+Other browsers may load the home page, but upload is blocked when the required local translation runtime is unavailable.
+
+## Development
+
+Requirements:
 
 - Node.js `^20.19.0 || >=22.12.0`
 - npm
 - Desktop Google Chrome or Microsoft Edge
 
-Chrome/Edge desktop are currently required because Lingadoo relies on the browser's local `Translator` API plus WebAssembly, module workers, and local canvas APIs. Other browsers may load the home page, but the public upload flow is blocked when the required local translation runtime is unavailable.
-
-## Development
+Run locally:
 
 ```bash
 npm install
@@ -65,7 +98,7 @@ Use the built-in inspection runner for real upload/editor behavior:
 npm run inspect:browser -- --pdf ./tests/documents/report_1_test.pdf --block p1_b39
 ```
 
-The script starts a fresh Vite dev server unless `--url` is passed.
+The script starts a fresh Vite dev server unless `--url` is passed. See [docs/inspection.md](docs/inspection.md).
 
 ## Deployment
 
@@ -81,6 +114,8 @@ PAGES_CUSTOM_DOMAIN=lingadoo.app
 
 The included Pages workflow sets `VITE_SOURCE_URL` to the GitHub repository URL automatically. It writes `dist/CNAME` only when `PAGES_CUSTOM_DOMAIN` is configured, so forks do not accidentally claim `lingadoo.app`.
 
+See [docs/deployment.md](docs/deployment.md).
+
 ## Google Analytics
 
 Google Analytics support is present but disabled by default. It is enabled only when all of these are true:
@@ -91,10 +126,6 @@ Google Analytics support is present but disabled by default. It is enabled only 
 - either `VITE_GA_REQUIRE_CONSENT` is not `true`, or `localStorage["lingadoo.analytics.consent"]` is `granted`
 
 Do not track uploaded document contents, filenames, extracted text, block ids, or edited content in analytics events.
-
-## Privacy Model
-
-Uploaded PDFs are processed in the browser. The static app does not send document bytes, extracted text, filenames, translations, block ids, or edits to a Lingadoo server. The app also avoids external font CDNs; bundled export fonts are served with the static app.
 
 ## License
 
