@@ -2,8 +2,26 @@
   "name": "lingadoo",
   "private": true,
   "version": "0.1.0",
+  "description": "Browser-first PDF translation and editing app that keeps the active document flow local.",
+  "homepage": "https://lingadoo.app",
   "license": "AGPL-3.0-or-later",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ohad7/lingadoo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ohad7/lingadoo/issues"
+  },
+  "keywords": [
+    "pdf",
+    "translation",
+    "editor",
+    "browser",
+    "mupdf",
+    "react",
+    "vite"
+  ],
   "engines": {
     "node": "^20.19.0 || >=22.12.0"
   },

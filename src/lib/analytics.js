@@ -1,5 +1,6 @@
 const DEFAULT_ENV = import.meta.env || {};
 const LOCAL_HOSTNAMES = new Set(['localhost', '127.0.0.1', '::1', '0.0.0.0']);
+const CONSENT_STORAGE_KEY = 'lingadoo.analytics.consent';
 
 function normalizeMeasurementId(value) {
   const id = String(value || '').trim();
@@ -10,9 +11,28 @@ export function getAnalyticsMeasurementId(env = DEFAULT_ENV) {
   return normalizeMeasurementId(env?.VITE_GA_MEASUREMENT_ID);
 }
 
+export function shouldRequireAnalyticsConsent(env = DEFAULT_ENV) {
+  return String(env?.VITE_GA_REQUIRE_CONSENT || '').trim().toLowerCase() === 'true';
+}
+
+export function hasAnalyticsConsent({
+  env = DEFAULT_ENV,
+  storage = globalThis.localStorage,
+} = {}) {
+  if (!shouldRequireAnalyticsConsent(env)) {
+    return true;
+  }
+  try {
+    return storage?.getItem?.(CONSENT_STORAGE_KEY) === 'granted';
+  } catch {
+    return false;
+  }
+}
+
 export function shouldEnableAnalytics({
   env = DEFAULT_ENV,
   hostname = globalThis.location?.hostname || '',
+  storage = globalThis.localStorage,
 } = {}) {
   const measurementId = getAnalyticsMeasurementId(env);
   if (!measurementId) {
@@ -24,6 +44,9 @@ export function shouldEnableAnalytics({
   if (LOCAL_HOSTNAMES.has(String(hostname || '').toLowerCase())) {
     return false;
   }
+  if (!hasAnalyticsConsent({ env, storage })) {
+    return false;
+  }
   return true;
 }
 
@@ -32,7 +55,11 @@ export function initializeAnalytics({
   documentObject = globalThis.document,
   windowObject = globalThis.window,
 } = {}) {
-  if (!documentObject || !windowObject || !shouldEnableAnalytics({ env, hostname: windowObject.location?.hostname })) {
+  if (!documentObject || !windowObject || !shouldEnableAnalytics({
+    env,
+    hostname: windowObject.location?.hostname,
+    storage: windowObject.localStorage,
+  })) {
     return false;
   }
 

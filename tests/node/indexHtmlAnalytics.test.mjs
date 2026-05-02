@@ -6,6 +6,7 @@ import { fileURLToPath } from 'node:url';
 
 import {
   getAnalyticsMeasurementId,
+  hasAnalyticsConsent,
   shouldEnableAnalytics,
 } from '../../src/lib/analytics.js';
 
@@ -18,6 +19,7 @@ test('index.html does not hardcode Google Analytics credentials', async () => {
 
   assert.doesNotMatch(indexHtml, /googletagmanager/u);
   assert.doesNotMatch(indexHtml, /G-[A-Z0-9]+/u);
+  assert.doesNotMatch(indexHtml, /fonts\.googleapis|fonts\.gstatic/u);
 });
 
 test('analytics is enabled only with a production GA measurement id', () => {
@@ -37,4 +39,20 @@ test('analytics is enabled only with a production GA measurement id', () => {
     }),
     false,
   );
+});
+
+test('analytics can require explicit local consent', () => {
+  const env = {
+    MODE: 'production',
+    PROD: true,
+    VITE_GA_MEASUREMENT_ID: 'G-ABC123XYZ',
+    VITE_GA_REQUIRE_CONSENT: 'true',
+  };
+  const deniedStorage = { getItem: () => null };
+  const grantedStorage = { getItem: () => 'granted' };
+
+  assert.equal(hasAnalyticsConsent({ env, storage: deniedStorage }), false);
+  assert.equal(hasAnalyticsConsent({ env, storage: grantedStorage }), true);
+  assert.equal(shouldEnableAnalytics({ env, hostname: 'lingadoo.app', storage: deniedStorage }), false);
+  assert.equal(shouldEnableAnalytics({ env, hostname: 'lingadoo.app', storage: grantedStorage }), true);
 });

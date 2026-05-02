@@ -223,104 +223,6 @@ export class InMemoryTranslationMemory {
   }
 }
 
-export class OllamaTranslationProvider {
-  constructor({
-    model,
-    baseUrl = 'http://127.0.0.1:11434',
-    timeoutMs = 120000,
-    seed = 42,
-    sourceLang = null,
-    sourceCode = 'he',
-    targetLang = null,
-    targetCode = 'en',
-    fetchImpl = globalThis.fetch,
-  }) {
-    this.model = model;
-    this.baseUrl = baseUrl.replace(/\/+$/u, '');
-    this.timeoutMs = timeoutMs;
-    this.seed = seed;
-    this.sourceCode = normalizeDocumentLanguageCode(sourceCode, 'he');
-    this.targetCode = normalizeDocumentLanguageCode(targetCode, 'en');
-    this.sourceLang = sourceLang || getDocumentLanguage(this.sourceCode).name;
-    this.targetLang = targetLang || getDocumentLanguage(this.targetCode).name;
-    this.fetchImpl = fetchImpl;
-  }
-
-  prompt(text, {
-    blockType: _blockType = 'paragraph',
-    sourceDirection: _sourceDirection = 'RTL',
-    strict: _strict = false,
-  } = {}) {
-    const instructions = [
-      `You are a professional ${this.sourceLang} (${this.sourceCode}) to ${this.targetLang} (${this.targetCode}) translator. Your goal is to accurately convey the meaning and nuances of the original ${this.sourceLang} text while adhering to ${this.targetLang} grammar, vocabulary, and cultural sensitivities.`,
-      `Produce only the ${this.targetLang} translation, without any additional explanations or commentary. Please translate the following ${this.sourceLang} text into ${this.targetLang}:`,
-    ];
-    return `${instructions.join('\n')}\n\n\n${text}`;
-  }
-
-  async translate(text, {
-    blockType = 'paragraph',
-    sourceDirection = 'RTL',
-    strict = false,
-  } = {}) {
-    if (typeof this.fetchImpl !== 'function') {
-      throw new TranslationDependencyError('fetch is not available for Ollama translation');
-    }
-
-    const controller = typeof AbortController !== 'undefined' ? new AbortController() : null;
-    const timeout = controller
-      ? setTimeout(() => controller.abort(), this.timeoutMs)
-      : null;
-
-    try {
-      const response = await this.fetchImpl(`${this.baseUrl}/api/chat`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          model: this.model,
-          stream: false,
-          messages: [
-            {
-              role: 'user',
-              content: this.prompt(text, { blockType, sourceDirection, strict }),
-            },
-          ],
-          options: {
-            temperature: 0,
-            seed: this.seed,
-          },
-        }),
-        signal: controller?.signal,
-      });
-
-      if (!response.ok) {
-        throw new TranslationDependencyError(`Ollama returned HTTP ${response.status}`);
-      }
-      const parsed = await response.json();
-      let candidate = '';
-      if (parsed?.message && typeof parsed.message === 'object') {
-        candidate = String(parsed.message.content || '').trim();
-      }
-      if (!candidate) {
-        candidate = String(parsed?.response || '').trim();
-      }
-      if (!candidate) {
-        throw new TranslationDependencyError('Ollama returned empty translation response');
-      }
-      return candidate;
-    } catch (error) {
-      if (error instanceof TranslationDependencyError) {
-        throw error;
-      }
-      throw new TranslationDependencyError(`failed to call Ollama API at ${this.baseUrl}: ${error}`);
-    } finally {
-      if (timeout !== null) {
-        clearTimeout(timeout);
-      }
-    }
-  }
-}
-
 function normalizeText(text) {
   return String(text || '').split(/\s+/u).filter(Boolean).join(' ');
 }
@@ -459,36 +361,6 @@ function normalizeTranslatedLabelColonOrder(sourceText, candidateText, { targetC
     return candidateLines.map((line, index) => normalizeLine(sourceLines[index], line)).join('\n');
   }
   return normalizeLine(sourceText, candidateText);
-}
-
-function protectSourceDates(text) {
-  const replacements = {};
-  let index = 1;
-  const protectedText = String(text || '').replace(DATE_PATTERN, (match) => {
-    const placeholder = `[[DATE_${index}]]`;
-    replacements[placeholder] = match;
-    index += 1;
-    return placeholder;
-  });
-  return { protectedText, replacements };
-}
-
-function restoreProtectedDates(text, replacements) {
-  let restored = String(text || '');
-  for (const [placeholder, token] of Object.entries(replacements || {})) {
-    restored = restored.replaceAll(placeholder, token);
-  }
-  if (replacements && Object.keys(replacements).length > 0) {
-    const numberedTokens = {};
-    for (const [placeholder, token] of Object.entries(replacements)) {
-      const match = /^\[\[DATE_(\d+)\]\]$/u.exec(placeholder);
-      if (match) {
-        numberedTokens[match[1]] = token;
-      }
-    }
-    restored = restored.replace(/\[\[\s*DATE_(\d+)\s*\]\]/gu, (full, number) => numberedTokens[number] || full);
-  }
-  return restored;
 }
 
 function enforceSourceDates(sourceText, candidateText) {
@@ -720,17 +592,11 @@ export async function translateBlock(block, {
   }
 
   const logicalSourceText = normalizedRtlLabelSource(block.text) || block.text;
-  let protectedSourceText = logicalSourceText;
-  let datePlaceholders = {};
-  if (provider instanceof OllamaTranslationProvider) {
-    const protectedValues = protectSourceDates(logicalSourceText);
-    protectedSourceText = protectedValues.protectedText;
-    datePlaceholders = protectedValues.replacements;
-  }
+  const protectedSourceText = logicalSourceText;
   const blockSourceDirection = sourceDirection(block.text);
 
   const normalizeCandidate = (candidateText) => {
-    let candidate = restoreProtectedDates(candidateText, datePlaceholders);
+    let candidate = String(candidateText || '');
     candidate = enforceSourceDates(block.text, candidate);
     candidate = normalizeCandidateLineBreaks(block.text, candidate, { blockType: block.type });
     candidate = normalizeTranslatedLabelColonOrder(block.text, candidate, { targetCode: context.targetCode });

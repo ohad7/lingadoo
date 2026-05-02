@@ -31,7 +31,7 @@
   --shadow-md: 0 2px 8px rgba(46,58,74,0.09);
   --shadow-lg: 0 4px 20px rgba(46,58,74,0.12);
   /* Heading font */
-  --font-heading: 'DM Sans', 'Inter', system-ui, sans-serif;
+  --font-heading: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 @font-face {
@@ -54,7 +54,7 @@
 
 body {
   margin: 0;
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: var(--ink);
   background: var(--bg);
 }

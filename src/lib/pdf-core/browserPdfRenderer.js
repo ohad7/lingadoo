@@ -78,7 +78,7 @@ function resolvePdfOverlayFontSpec({ weight = 'normal', italic = false } = {}) {
   if (normalizedWeight === 'bold' && italic) {
     return {
       cacheKey: 'browser-noto-bold-italic',
-      fontName: 'PDEbrewBrowserPDFBoldItalic',
+      fontName: 'LingadooBrowserPDFBoldItalic',
       builtinName: 'Helvetica-BoldOblique',
       dataKey: 'boldItalicData',
     };
@@ -86,7 +86,7 @@ function resolvePdfOverlayFontSpec({ weight = 'normal', italic = false } = {}) {
   if (normalizedWeight === 'bold') {
     return {
       cacheKey: 'browser-noto-bold',
-      fontName: 'PDEbrewBrowserPDFBold',
+      fontName: 'LingadooBrowserPDFBold',
       builtinName: 'Helvetica-Bold',
       dataKey: 'boldData',
     };
@@ -94,14 +94,14 @@ function resolvePdfOverlayFontSpec({ weight = 'normal', italic = false } = {}) {
   if (italic) {
     return {
       cacheKey: 'browser-noto-italic',
-      fontName: 'PDEbrewBrowserPDFItalic',
+      fontName: 'LingadooBrowserPDFItalic',
       builtinName: 'Helvetica-Oblique',
       dataKey: 'italicData',
     };
   }
   return {
     cacheKey: 'browser-noto-regular',
-    fontName: 'PDEbrewBrowserPDFRegular',
+    fontName: 'LingadooBrowserPDFRegular',
     builtinName: 'Helvetica',
     dataKey: 'regularData',
   };

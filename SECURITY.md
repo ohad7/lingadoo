@@ -1,6 +1,15 @@
 # Security Policy
 
-Please report security issues privately to the project maintainer before publishing details.
+Please report security issues privately before publishing details. Use GitHub private vulnerability reporting for this repository when available. If that is not available, contact the maintainer through the GitHub profile associated with the repository.
+
+## Scope
+
+Security-sensitive areas include:
+
+- handling uploaded PDFs in the browser
+- PDF parsing, rendering, and export
+- analytics and privacy boundaries
+- static deployment configuration
 
 Include:
 
