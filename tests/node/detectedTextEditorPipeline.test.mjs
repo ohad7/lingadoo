@@ -25,7 +25,7 @@ import { createLocalEditorSession } from '../../src/lib/localEditorSession.ts';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const repoRoot = path.resolve(__dirname, '../../..');
+const repoRoot = path.resolve(__dirname, '../..');
 
 test('detected text extraction emits text_line blocks and preserves styles', async () => {
   const fixturePath = path.join(repoRoot, 'tests', 'documents', 'report_1_test.pdf');

@@ -5,7 +5,7 @@ import { expect, type Page } from '@playwright/test';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const repoRoot = path.resolve(__dirname, '../../../..');
+const repoRoot = path.resolve(__dirname, '../../..');
 const fixturePdf = path.join(repoRoot, 'tests/documents/report_1_test.pdf');
 
 export function reportFixturePath(): string {
